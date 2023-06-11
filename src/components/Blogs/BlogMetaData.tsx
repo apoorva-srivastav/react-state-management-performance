@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState } from "react";
+import React, { useCallback, useContext, useMemo, useState } from "react";
 import { BlogContext } from "../../context/BlogContext";
 import DateAndTime from "../Common/DateAndTime";
 import DisplayValue from "../Common/DisplayValue";
@@ -9,7 +9,7 @@ const BlogMetaData = ({ theme }: any) => {
   const [pendingBlogs, setPendingBlogs] = useState(["30", "9", "1"]);
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleString());
 
-  console.log('pendingBlogs recomputed')
+  //console.log('pendingBlogs recomputed')
   const getBlogsLength = `No. of pending blogs for the Month: ${pendingBlogs.length}`;
 
 //   const getBlogsLength = useMemo(() => {
@@ -20,6 +20,10 @@ const BlogMetaData = ({ theme }: any) => {
   const handleClick = () => {
     setPendingBlogs(pendingBlogs.slice());
   };
+
+// const handleClick = useCallback(() => {
+//     setPendingBlogs(pendingBlogs.slice());
+//   }, [pendingBlogs]);
 
   return (
     <div

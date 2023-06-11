@@ -20,10 +20,6 @@ function BlogEditor() {
     "https://live.staticflickr.com/3792/9722349899_d5c406a96c_b.jpg"
   );
 
-  const setState = ({stateSetter, value}: any) => {
-      stateSetter(value)
-  }
-
   const { blogs, editBlog, addBlog, deleteBlog } = useContext(BlogContext);
 
   useEffect(() => {

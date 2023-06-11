@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+import React from "react";
 
 
 const DisplayValue = ({value, theme, onClick}: any) => {
@@ -12,3 +13,5 @@ const DisplayValue = ({value, theme, onClick}: any) => {
 }
 
 export default  DisplayValue;
+
+//export default  React.memo(DisplayValue);

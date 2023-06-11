@@ -8,7 +8,6 @@ import BlogEditor from "./pages/BlogEditor";
 import "./styles/App.css";
 import { purple } from "@mui/material/colors";
 import { BlogProvider } from "./context/BlogContext";
-import RenderReactTree from "./pages/RenderReactTree";
 
 // Create a custom dark theme
 const theme = createTheme({
@@ -36,7 +35,6 @@ function App() {
             <Route path="/" element={<BlogSummaryList />} />
             <Route path="/edit/:id" element={<BlogEditor />} />
             <Route path="/new" element={<BlogEditor />} />
-            <Route path="/render" element={<RenderReactTree />} />
           </Routes>
         </Router>
         <Footer />
