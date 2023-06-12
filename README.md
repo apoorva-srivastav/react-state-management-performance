@@ -18,4 +18,18 @@ To improve performance we need to reduce the unecessary re-renders of components
 
 With these we can reduce the re-renders and thus improving load time for the overall application when user interacts with it.
 
+--------
+# Playground
+
+Use this app as playground to test how using different hooks you can improve perfomance of your app. You can also see in the Profiler devtool how the app is chaching components and preventing their re-render.
+
+----------
+
+# Get Started
+
+To test the app:
+
+1. Create a clone and run the command npm i
+2. Run the command `npm run dev`
+
 
