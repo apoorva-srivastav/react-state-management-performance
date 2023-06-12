@@ -18,7 +18,7 @@ const theme = createTheme({
       main: "#BBBCBD",
     },
     primary: {
-      main: purple[500],
+      main: purple[400],
     },
   },
 });

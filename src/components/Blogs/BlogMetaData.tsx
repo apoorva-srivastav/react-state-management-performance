@@ -1,5 +1,4 @@
 import React, { useCallback, useContext, useMemo, useState } from "react";
-import { BlogContext } from "../../context/BlogContext";
 import DateAndTime from "../Common/DateAndTime";
 import DisplayValue from "../Common/DisplayValue";
 
@@ -12,27 +11,28 @@ const BlogMetaData = ({ theme }: any) => {
   //console.log('pendingBlogs recomputed')
   const getBlogsLength = `No. of pending blogs for the Month: ${pendingBlogs.length}`;
 
-//   const getBlogsLength = useMemo(() => {
-//     console.log('pendingBlogs recomputed')
-//     return `No. of pending blogs for the Month: ${pendingBlogs.length}`;
-//   }, [pendingBlogs]);
+  //   const getBlogsLength = useMemo(() => {
+  //     console.log('pendingBlogs recomputed')
+  //     return `No. of pending blogs for the Month: ${pendingBlogs.length}`;
+  //   }, [pendingBlogs]);
 
   const handleClick = () => {
     setPendingBlogs(pendingBlogs.slice());
   };
 
-// const handleClick = useCallback(() => {
-//     setPendingBlogs(pendingBlogs.slice());
-//   }, [pendingBlogs]);
+  // const handleClick = useCallback(() => {
+  //     setPendingBlogs(pendingBlogs.slice());
+  //   }, [pendingBlogs]);
 
   return (
     <div
       style={{
         display: "flex",
         justifyContent: "space-between",
-        margin: theme.spacing(4),
-        marginLeft: theme.spacing(4),
-        marginRight: theme.spacing(4),
+        padding: theme.spacing(2),
+        paddingRight: theme.spacing(4),
+        paddingLeft: theme.spacing(4),
+        marginTop: theme.spacing(1)
       }}
     >
       <DisplayValue

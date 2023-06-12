@@ -4,17 +4,17 @@ import { purple } from "@mui/material/colors";
 import { IconButton, IconButtonProps } from "@mui/material";
 
 const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
-  color: theme.palette.getContrastText(purple[500]),
+  color: theme.palette.getContrastText(purple[400]),
   "&:hover": {
-    color: theme.palette.getContrastText(purple[500]),
-    backgroundColor: purple[500],
+    color: theme.palette.getContrastText(purple[400]),
+    backgroundColor: purple[400],
   },
 }));
 
 const ColorIconButton = styled(IconButton)<IconButtonProps>(({ theme }) => ({
-  color: theme.palette.getContrastText(purple[500]),
+  color: theme.palette.getContrastText(purple[400]),
   "&:hover": {
-    backgroundColor: purple[700],
+    backgroundColor: purple[400],
     border: "none",
   },
   "&:focus": {
@@ -23,7 +23,7 @@ const ColorIconButton = styled(IconButton)<IconButtonProps>(({ theme }) => ({
 }));
 
 const ColorIcon = styled(IconButton)<IconButtonProps>(() => ({
-  color: purple[700],
+  color: purple[400],
 }));
 
 export { ColorIconButton, ColorButton, ColorIcon };
