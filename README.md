@@ -10,7 +10,7 @@ The component heirarchy is,
 
 <img width="1358" alt="Untitled" src="https://github.com/Apoorva2696/react-state-management-performance/assets/23259042/8e7c4f41-bd61-4762-b457-41f7541e77ed">
 
-The above diagram depicts the children of Blog Overwiew and how each child should be agnostic to changes in the parent which are not related to it.
+The above diagram depicts the children of Blog Page and how each child should be agnostic to changes in the parent which are not related to it.
 If the parent state change does not effect a component then it should no re-render.
 
 To improve performance we need to reduce the unecessary re-renders of components. We achieve this by using-
