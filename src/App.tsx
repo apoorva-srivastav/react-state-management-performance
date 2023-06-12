@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import { Header, Footer } from "./components/Header/HeaderAndFooter";
-import BlogSummaryList from "./pages/BlogSummaryList";
+import BlogOverviewPage from "./pages/BlogOverviewPage";
 import BlogEditor from "./pages/BlogEditor";
 
 import "./styles/App.css";
@@ -32,7 +32,7 @@ function App() {
         <Router>
           <Header />
           <Routes>
-            <Route path="/" element={<BlogSummaryList />} />
+            <Route path="/" element={<BlogOverviewPage />} />
             <Route path="/edit/:id" element={<BlogEditor />} />
             <Route path="/new" element={<BlogEditor />} />
           </Routes>

@@ -3,12 +3,10 @@ import { useTheme } from "@mui/material/styles";
 import { BlogContext } from "../context/BlogContext";
 import { Fragment, useContext, useMemo } from "react";
 import BlogView from "../components/Blogs/BlogView";
-import DateAndTime from "../components/Common/DateAndTime";
-import DisplayValue from "../components/Common/DisplayValue";
 import BlogMetaData from "../components/Blogs/BlogMetaData";
 
-const BlogSummaryList = () => {
-  console.log("BlogSummaryList.render");
+const BlogOverviewPage = () => {
+  console.log("BlogOverviewPage.render");
 
   const { blogs } = useContext(BlogContext);
   const theme = useTheme();
@@ -25,4 +23,4 @@ const BlogSummaryList = () => {
   );
 };
 
-export default BlogSummaryList;
+export default BlogOverviewPage;
