@@ -19,6 +19,18 @@ To improve performance we need to reduce the unecessary re-renders of components
 
 With these we can reduce the re-renders and thus improving load time for the overall application when user interacts with it.
 
+# Performance
+We can see in the profiler that with the above mentioned practices the uneccesary re-renders,
+
+### Before optimizations -  all the children update
+<img width="1010" alt="Screenshot 2023-06-14 at 9 41 35 PM" src="https://github.com/Apoorva2696/react-state-management-performance/assets/23259042/d3e04d1a-a1f3-482c-b4a5-1a0361c8f733">
+
+
+### After optimization - only relevant children update
+![Screenshot 2023-06-14 at 9 36 30 PM](https://github.com/Apoorva2696/react-state-management-performance/assets/23259042/b6f8cf0b-087d-4cb1-ac4e-5ff24c8de28e)
+
+
+
 # Playground
 
 Use this app as playground to test how using different hooks you can improve perfomance of your app. You can also see in the Profiler devtool how the app is caching components and preventing their re-render.
