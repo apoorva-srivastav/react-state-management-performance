@@ -9,12 +9,12 @@ const BlogMetaData = ({ theme }: any) => {
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleString());
 
   //console.log('pendingBlogs recomputed')
-  const getBlogsLength = `No. of pending blogs for the Month: ${pendingBlogs.length}`;
+  //const getBlogsLength = `No. of pending blogs for the Month: ${pendingBlogs.length}`;
 
-  //   const getBlogsLength = useMemo(() => {
-  //     console.log('pendingBlogs recomputed')
-  //     return `No. of pending blogs for the Month: ${pendingBlogs.length}`;
-  //   }, [pendingBlogs]);
+    const getBlogsLength = useMemo(() => {
+      console.log('pendingBlogs recomputed')
+      return `No. of pending blogs for the Month: ${pendingBlogs.length}`;
+    }, [pendingBlogs]);
 
   const handleClick = () => {
     setPendingBlogs(pendingBlogs.slice());
@@ -49,9 +49,9 @@ const BlogMetaData = ({ theme }: any) => {
   );
 };
 
-//export default BlogMetaData;
+export default BlogMetaData;
 
-export default React.memo(BlogMetaData);
+//export default React.memo(BlogMetaData);
 
 // const getBlogsLength = useMemo(() => {
 //   return `No. of pending blogs for the Month: ${pendingBlogs.length}`

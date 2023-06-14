@@ -12,15 +12,30 @@ const BlogOverviewPage = () => {
   const theme = useTheme();
 
   return (
-    <Fragment>
+    <div style={{padding: '10px'}}>
+      <div style={{border: `1px solid ${theme.palette.primary.main}`}}>
       <BlogMetaData theme={theme}/>
+      </div>
+      <div style={{border: `1px solid ${theme.palette.primary.main}`, marginTop: '5px'}}>
       <Grid container spacing={4} sx={{ padding: theme.spacing(4) }}>
         {blogs.map((blog: any) => (
           <BlogView blog={blog} theme={theme} key={blog.id} />
         ))}
       </Grid>
-    </Fragment>
+      </div>
+    </div>
   );
+
+  // return (
+  //   <Fragment>
+  //     <BlogMetaData theme={theme}/>
+  //     <Grid container spacing={4} sx={{ padding: theme.spacing(4) }}>
+  //       {blogs.map((blog: any) => (
+  //         <BlogView blog={blog} theme={theme} key={blog.id} />
+  //       ))}
+  //     </Grid>
+  //   </Fragment>
+  // );
 };
 
 export default BlogOverviewPage;

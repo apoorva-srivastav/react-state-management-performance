@@ -20,7 +20,7 @@ const BlogView = ({ blog, theme }: any) => {
       <Card>
         <CardMedia
           component="img"
-          height="150"
+          height="135"
           image={blog.imageUrl}
           alt={blog.title}
         />

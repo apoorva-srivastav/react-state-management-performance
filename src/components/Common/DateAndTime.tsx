@@ -29,7 +29,7 @@ const DateAndTime = ({theme, currentTime, setCurrentTime}: any) => {
   
 }
 
-//export default DateAndTime;
+export default DateAndTime;
 
 
-export default React.memo(DateAndTime);
+//export default React.memo(DateAndTime);
