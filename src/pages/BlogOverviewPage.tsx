@@ -38,4 +38,4 @@ const BlogOverviewPage = () => {
   // );
 };
 
-export default BlogOverviewPage;
+export {BlogOverviewPage};

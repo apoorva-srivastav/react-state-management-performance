@@ -95,4 +95,4 @@ function BlogEditor() {
   );
 }
 
-export default BlogEditor;
+export { BlogEditor };

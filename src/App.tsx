@@ -1,33 +1,18 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 
-import { Header, Footer } from "./components/Header/HeaderAndFooter";
-import BlogOverviewPage from "./pages/BlogOverviewPage";
-import BlogEditor from "./pages/BlogEditor";
+import { Header, Footer } from "./components";
+import { BlogOverviewPage, BlogEditor } from "./pages";
+import { BlogProvider } from "./context";
 
 import "./styles/App.css";
-import { purple } from "@mui/material/colors";
-import { BlogProvider } from "./context/BlogContext";
-
-// Create a custom dark theme
-const theme = createTheme({
-  spacing: [0, 4, 8, 16, 32, 64],
-  palette: {
-    mode: "dark",
-    secondary: {
-      main: "#BBBCBD",
-    },
-    primary: {
-      main: purple[400],
-    },
-  },
-});
+import { darkTheme } from "./themes";
 
 function App() {
   console.log("App.render");
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
       <BlogProvider>
         <Router>
           <Header />
